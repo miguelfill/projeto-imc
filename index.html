@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Calculator-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Calculadora imc</title>
+</head>
+<body>
+    <div class="container">
+        <div class="padrao">
+            <p>Clique no botão para calcular seu IMC</p>  
+            <button onclick="go(1, 2)">Vamos começar?</button>              
+        </div>
+        <div class="calculo">
+            <h3>Calcule aqui seu IMC</h3>
+            <hr>
+            <label for="peso">Digite seu peso:</label>
+            <input type="number" placeholder="Seu peso" id="peso">
+            <br><br>
+            <label for="altura">Digite sua altura:</label>
+            <input type="number" placeholder="Sua altura" id="altura">
+            <br><br>
+            <button onclick="validate()">Calcular</button>
+        </div>
+        <div class="resultado">
+            <h3>Resultado</h3>
+            <p id="resultado"></p>
+            <hr>
+            <div class="div-tabela">
+                <table class="tabela">
+                    <thead>
+                        <td>
+                            <td>Confira aqui a tabela do IMC</td>
+                        </tr>
+                    </thead>
+                        
+                    <tbody>						
+                        <tr>
+                            <td>IMC</td>
+                            <td>Classificação</td>
+                            <td>Obesidade <small>(grau)</small></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Menor que 18,5</td>
+                            <td>Magreza</td>
+                            <td>0</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Entre 18,5 e 24,9</td>
+                            <td>Normal</td>
+                            <td>0</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Entre 25,0 e 29,9</td>
+                            <td>Sobrepeso</td>
+                            <td>I</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Entre 30,0 e 39,9</td>
+                            <td>Obesidade</td>
+                            <td>II</td>
+                        </tr>
+
+                        <tr>
+                            <td>Maior que 40,0</td>
+                            <td>Obesidade Grave</td>
+                            <td>III</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+            </div>
+            <br>
+            <button onclick="go(3,2)">Calcular novamente</button>
+            <button onclick="go(3,1)">Finalizar</button>
+        </div>
+    </div>
+    <script src="src/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right, rgba(89, 152, 214, 0.993), rgb(109, 74, 165));
+    text-align: center;
+    color: white;
+    
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+
+
+.calculo, .resultado{
+    display: none;
+}
+
+button{
+    color: white;
+    background-color: rgb(146, 78, 209);
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px black;
+}
+
+button:hover{
+    background-color: steelblue;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#resultado{
+    font-size: 25px;
+}
+
+.div-tabela{
+    width: 100%
+}
+
+.tabela{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+
