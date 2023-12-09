@@ -6,9 +6,9 @@
 
 ### Como usar?
 
-1 - Insira seu peso em quilos
-2 - Insira sua altura
-3 - Clique no botão de calcular
+### 1 - Insira seu peso em quilos
+### 2 - Insira sua altura
+### 3 - Clique no botão de calcular
 
 ![Calculadora de índice de massa corpórea](https://github.com/miguelfill/projeto-imc/blob/main/Calculadora-imc.gif)
 
